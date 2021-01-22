@@ -11,16 +11,23 @@
 </template>
 
 <script>
+import UserInfo from "./components/UserInfo.vue";
+import TheHeader from "./components/TheHeader.vue";
+
 export default {
+  components: {
+    UserInfo,
+    TheHeader
+  },
   data() {
     return {
       activeUser: {
-        name: 'Maximilian Schwarzmüller',
-        description: 'Site owner and admin',
-        role: 'admin',
-      },
+        name: "Maximilian Schwarzmüller",
+        description: "Site owner and admin",
+        role: "admin"
+      }
     };
-  },
+  }
 };
 </script>
 
