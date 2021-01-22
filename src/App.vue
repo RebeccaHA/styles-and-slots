@@ -13,11 +13,13 @@
 <script>
 import UserInfo from "./components/UserInfo.vue";
 import TheHeader from "./components/TheHeader.vue";
+import BadgeList from "./components/BadgeList.vue";
 
 export default {
   components: {
     UserInfo,
-    TheHeader
+    TheHeader,
+    BadgeList
   },
   data() {
     return {
