@@ -1,9 +1,9 @@
 <template>
   <div>
     <the-header></the-header>
-    <button>Active Goals</button>
-    <button>Manage Goals</button>
-    <component></component>
+    <button @click="setSelectedComponent('active-goals')">Active Goals</button>
+    <button @click="setSelectedComponent('manage-goals')">Manage Goals</button>
+    <component :is="selected"></component>
   </div>
 </template>
 
@@ -29,7 +29,7 @@ export default {
     };
   },
   methods: {
-    setSelected(comp) {
+    setSelectedComponent(comp) {
       this.selected = comp;
     }
   }
