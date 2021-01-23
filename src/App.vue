@@ -3,8 +3,7 @@
     <the-header></the-header>
     <button>Active Goals</button>
     <button>Manage Goals</button>
-    <active-goals></active-goals>
-    <manage-goals></manage-goals>
+    <component></component>
   </div>
 </template>
 
@@ -21,12 +20,18 @@ export default {
   },
   data() {
     return {
+      selected: "active-goals",
       activeUser: {
         name: "Maximilian Schwarzmüller",
         description: "Site owner and admin",
         role: "admin"
       }
     };
+  },
+  methods: {
+    setSelected(comp) {
+      this.selected = comp;
+    }
   }
 };
 </script>
